@@ -67,11 +67,16 @@ contraseñaCorrecta(contraseña)
 
 // 6 y 7
 
+let edad = prompt("Ingrese su edad")
+let precio = promt("Ingrese el precio del producto para ver su descuento")
+function descuento(edad, precio)
+    if (edad >= 65)
+
 let nota = prompt("Ingrese la calificación numérica (0-100)")
 function calificaciónNumerica(nota) {
     if (nota <= 60) {
         alert("Tenes un EP")
-    } else if (nota <= 79) {
+    } else if (nota <= 80) {
         alert("Tenes un S")
     } else if (nota <= 100) {
         alert("Tenes un MS")
@@ -85,37 +90,36 @@ function diaNumero(numero) {
         alert("1 es Lunes")
     } else if (numero == 2) {
         alert("2 es Martes")
-    }else if (numero ==3){
+    } else if (numero == 3) {
         alert("3 es Miercoles")
-    }else if (numero == 4){
-        alert ("4 es Jueves")
-    }else if (numero == 5){
-        alert ("5 es Viernes")
-    } else if (numero == 6){
-        alert ("6 es Sábado")
-    } else if (numero == "Domingo"){
-        alert ("7 es Domingo")
+    } else if (numero == 4) {
+        alert("4 es Jueves")
+    } else if (numero == 5) {
+        alert("5 es Viernes")
+    } else if (numero == 6) {
+        alert("6 es Sábado")
+    } else if (numero == "Domingo") {
+        alert("7 es Domingo")
     }
 }
 diaNumero(numero)
 
 //10
 
-let cadenaUno = prompt ("Ingrese una palabra")
-let cadenaDos = prompt ("Ingrese nuevamente una palabra")
-function cadenas (cadenaUno, cadenaDos){
-    if (cadenaUno == cadenaDos){
-        alert ("Es la misma palabra")
+let cadenaUno = prompt("Ingrese una palabra")
+let cadenaDos = prompt("Ingrese nuevamente una palabra")
+function cadenas(cadenaUno, cadenaDos) {
+    if (cadenaUno == cadenaDos) {
+        alert("Es la misma palabra")
     } else if (cadenaUno != cadenaDos)
-        alert (cadenaUno+" no es igual que "+ cadenaDos)
+        alert(cadenaUno + " no es igual que " + cadenaDos)
 }
 cadenas(cadenaUno, cadenaDos)
 
-let edadUsuario = prompt ("Ingrese su año de nacimiento")
-function calcularEdad (edadUsuario)
-{
+let edadUsuario = prompt("Ingrese su año de nacimiento")
+function calcularEdad(edadUsuario) {
     let resultado = (2023 - edadUsuario)
-    alert ("Su edad es " + resultado)
-    return resultado 
+    alert("Su edad es " + resultado)
+    return resultado
 }
 calcularEdad(edadUsuario)
